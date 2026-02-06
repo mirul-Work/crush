@@ -20,16 +20,16 @@ html, body {
 }
 
 .title h1{
-    color: #fff;
+    color: #f0f0f0; /* Lighter color for better contrast */
     text-align: center;
     font-size: 50px;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Softer, more pronounced shadow */
     margin-bottom: 20px;
 }
 
 .title span{
     font-size: 50px;
-    color: #db3a34 ;
+    color: #ff6b6b ; /* A slightly brighter red */
 }
 
 .page {
@@ -56,9 +56,10 @@ html, body {
     flex-direction: column;
     gap: 20px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
-    background-color: rgba(255, 200, 87, 0.8);
+    border-radius: 20px; /* Increased border-radius for softer look */
+    background: rgba(255, 255, 255, 0.15); /* Transparent white background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Layered shadow */
     backdrop-filter: blur(10px);
 }
 
@@ -77,8 +78,8 @@ html, body {
 
 .container h2{
     font-size: 20px;
-    text-shadow:2px 2px 5px black;
-    color:#fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Softer shadow for glass effect */
+    color: #e0e0e0; /* Lighter color */
     text-align: center;
 }
 
@@ -117,14 +118,18 @@ html, body {
 }
 
 .yes-btn {
-    background-color: #177e89;
+    background: rgba(255, 255, 255, 0.1);
     color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .no-btn {
     position: absolute;
-    background-color: #db3a34;
+    background: rgba(219, 58, 52, 0.5); /* Transparent red background */
     color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .no-btn-grow {
@@ -142,10 +147,11 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(6, 29, 53, 0.8);
-    color: #fff;
+    background: rgba(6, 29, 53, 0.4); /* Transparent dark background */
+    color: #f0f0f0; /* Lighter color */
     text-align: center;
     padding: 10px;
+    backdrop-filter: blur(5px);
 }
 
 @keyframes gradientBG {
