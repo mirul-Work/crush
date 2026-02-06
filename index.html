@@ -6,29 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Crush</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <div class="title"><h1>Send <span>This </span>To<span>Your </span>Crush<span>!</span></h1></div>
+
+    <div id="page1" class="page active">
         <div class="container">
-        <div class="image-container">
-            <img src="assets/kawai.gif" alt="img">
+            <div class="image-container">
+                <img src="assets/kawai.gif" alt="img">
+            </div>
+            <h2>I liked you, do you like me?</h2>
+            <div class="button-container">
+                <button id="yes-btn" class="yes-btn">Yes</button>
+                <button id="no-btn" class="no-btn">No</button>
+            </div>
         </div>
-        <h2>I liked you, do you like me?</h2>
+    </div>
 
-    <div class="button-container">
-        <form action="second-page.html">
-        <button id="yes-btn">Yes</button>
-   
-    </form>
-    <button id="no-btn">No</button>
-</div>
+    <div id="page2" class="page">
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/love.gif" alt="img">
+            </div>
+            <h2>So i want you to be my girlfriend</h2>
+            <div class="button-container">
+                <button id="yes-btn2" class="yes-btn">Yes</button>
+                <button class="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/happy.gif" alt="img">
+            </div>
+            <h2>Yeayyy , Love You</h2>
+            <div class="button-container">
+                <button id="yes-btn3" class="yes-btn">Yes</button>
+                <button class="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="page">
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/patrick.gif" alt="img">
+            </div>
+            <h2>Will you be my valentine?</h2>
+            <div class="button-container">
+                <button class="yes-btn">Yes</button>
+                <button class="no-btn no-btn-grow">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page5" class="page">
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/last.gif" alt="img">
+            </div>
+            <div class="text-container">
+                <a href="custom.html" >Customized Your Own</a>
+                <h1>Or</h1>
+                <a href="index.html" >Start Again?</a>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Amirul Hamiezan</p>
-      </footer>
-</div>
+        <p>&copy; 2024</p>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
